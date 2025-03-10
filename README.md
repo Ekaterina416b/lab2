@@ -33,7 +33,7 @@ branch 'master' set up to track 'origin/master'.
 ~/projects/MyRepository$ touch hello_world.cpp
 ~/projects/MyRepository$ nano hello_world.cpp
 ```
-[hello_world.cpp]([hello_world.cpp](https://github.com/Ekaterina416b/MyRepository/blob/main/hello_world.cpp))
+[hello_world.cpp](https://github.com/Ekaterina416b/MyRepository/blob/main/hello_world.cpp)
 4) Добавьте этот файл в локальную копию репозитория.
 ```
 ~/projects/MyRepository$ git add hello_world.cpp
@@ -45,9 +45,7 @@ git commit -m "Add Hello World program in C++"
 [master a681570] Add Hello World program in C++
  1 file changed, 7 insertions(+)
  create mode 100644 hello_world.cpp
-```
 ~/projects/MyRepository$ git push origin master
-```
 Перечисление объектов: 4, готово.
 Подсчет объектов: 100% (4/4), готово.
 При сжатии изменений используется до 2 потоков
