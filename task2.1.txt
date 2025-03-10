@@ -1,0 +1,73 @@
+[sudo] пароль для ekaterina: 
+Warning: The unit file, source configuration file or drop-ins of apt-news.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Warning: The unit file, source configuration file or drop-ins of esm-cache.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]     
+Пол:3 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]      
+Пол:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [916 kB]
+Пол:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [668 kB]
+Пол:7 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [128 kB]
+Пол:8 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [8 988 B]
+Пол:9 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [719 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [206 kB]
+Пол:11 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [143 kB]
+Пол:12 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Пол:13 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [822 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [151 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [754 kB]
+Пол:16 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [177 kB]
+Пол:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52,0 kB]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [151 kB]
+Пол:19 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [26,2 kB]
+Пол:20 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [4 892 B]
+Пол:21 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Пол:22 http://ru.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Пол:23 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1 036 kB]
+Пол:24 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [260 kB]
+Пол:25 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [364 kB]
+Пол:26 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [30,1 kB]
+Пол:27 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [5 884 B]
+Пол:28 http://ru.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Пол:29 http://ru.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Пол:30 http://ru.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Пол:31 http://ru.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [20,0 kB]
+Пол:32 http://ru.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Получено 7 022 kB за 1мин 26с (81,9 kB/s)                                      
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Может быть обновлён 231 пакет. Запустите «apt list --upgradable» для показа.
+ekaterina@ekaterina-VirtualBox:~$ sudo apt install git
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Будут установлены следующие дополнительные пакеты:
+  git-man liberror-perl
+Предлагаемые пакеты:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+Следующие НОВЫЕ пакеты будут установлены:
+  git git-man liberror-perl
+Обновлено 0 пакетов, установлено 3 новых пакетов, для удаления отмечено 0 пакетов, и 231 пакетов не обновлено.
+Необходимо скачать 4 804 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 24,5 MB.
+Хотите продолжить? [Д/н] д
+Пол:1 http://ru.archive.ubuntu.com/ubuntu noble/main amd64 liberror-perl all 0.17029-2 [25,6 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2 [1 100 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.2 [3 679 kB]
+39% [3 git 420 kB/3 679 kB 11%]                                                 Получено 4 804 kB за 2мин 17с (35,2 kB/s)                                      
+Выбор ранее не выбранного пакета liberror-perl.
+(Чтение базы данных … на данный момент установлено 151283 файла и каталога.)
+Подготовка к распаковке …/liberror-perl_0.17029-2_all.deb …
+Распаковывается liberror-perl (0.17029-2) …
+Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/git-man_1%3a2.43.0-1ubuntu7.2_all.deb …
+Распаковывается git-man (1:2.43.0-1ubuntu7.2) …
+Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/git_1%3a2.43.0-1ubuntu7.2_amd64.deb …
+Распаковывается git (1:2.43.0-1ubuntu7.2) …
+Настраивается пакет liberror-perl (0.17029-2) …
+Настраивается пакет git-man (1:2.43.0-1ubuntu7.2) …
+Настраивается пакет git (1:2.43.0-1ubuntu7.2) …
+Обрабатываются триггеры для man-db (2.12.0-4build2) …
