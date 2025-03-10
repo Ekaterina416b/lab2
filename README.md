@@ -32,3 +32,5 @@ branch 'master' set up to track 'origin/master'.
 ```
 ~/projects/MyRepository$ touch hello_world.cpp
 ~/projects/MyRepository$ nano hello_world.cpp
+```
+[hello_world.cpp](hello_world.cpp)
