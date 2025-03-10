@@ -41,8 +41,9 @@ branch 'master' set up to track 'origin/master'.
 5)Закоммитьте изменения с осмысленным сообщением
 ```
 git commit -m "Add Hello World program in C++"
->> [master b27dcbe] Add Hello World program in C++
- 1 file changed, 0 insertions(+), 0 deletions(-)
+>>  World program in C++"
+[master a681570] Add Hello World program in C++
+ 1 file changed, 7 insertions(+)
  create mode 100644 hello_world.cpp
 ```
 6) Изменитьте исходный код так, чтобы программа через стандартный поток ввода запрашивалось имя пользователя. А в стандартный поток вывода печаталось сообщение Hello world from @name, где @name имя пользователя.
