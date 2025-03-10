@@ -33,7 +33,7 @@ branch 'master' set up to track 'origin/master'.
 ~/projects/MyRepository$ touch hello_world.cpp
 ~/projects/MyRepository$ nano hello_world.cpp
 ```
-[hello_world.cpp](hello_world.cpp)
+[hello_world.cpp]([hello_world.cpp](https://github.com/Ekaterina416b/MyRepository/blob/main/hello_world.cpp))
 4) Добавьте этот файл в локальную копию репозитория.
 ```
 ~/projects/MyRepository$ git add hello_world.cpp
