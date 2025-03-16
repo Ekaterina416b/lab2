@@ -78,81 +78,78 @@ To https://github.com/Ekaterina416b/MyRepository.git
  ```
  2)Внесите изменения в ветке patch1 по исправлению кода и избавления от using namespace std;.
  ```
- MyRepository % nano hello_world.cpp
+ nano hello_world.cpp
  ```
  3)commit, push локальную ветку в удалённый репозиторий.
  ```
  git add hello_world.cpp
  git commit -m "Remove using namespace std; and improve code style"
->>[patch1 84e9612] Remove using namespace std; and improve code style
- 1 file changed, 10 insertions(+)
- create mode 100644 MyRepository/hello_world.cpp
+>>[patch1 9a3bf03] Remove using namespace std; and improve code style
+ 1 file changed, 5 insertions(+), 5 deletions(-)
 git push origin patch1
->>Enumerating objects: 5, done.Counting objects: 100% (5/5), done.
+>>Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 539 bytes | 539.00 KiB/s, done.
-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Writing objects: 100% (3/3), 476 bytes | 476.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: 
 remote: Create a pull request for 'patch1' on GitHub by visiting:
-remote:      https://github.com/Ekaterina416b/MyRepository/pull/new/patch1
+remote:      https://github.com/Ekaterina416b/MyRepo/pull/new/patch1
 remote: 
-To https://github.com/Ekaterina416b/MyRepository.git
+To https://github.com/Ekaterina416b/MyRepo.git
  * [new branch]      patch1 -> patch1
 ```
  4)Проверьте, что ветка patch1 доступна в удалёный репозитории. 
  
- [Ссылка на ветку](https://github.com/Ekaterina416b/MyRepository/commits/patch1/) 
+ [Ссылка на ветку](https://github.com/Ekaterina416b/MyRepo/commits/patch1/) 
  
  5)Создайте pull-request patch1 -> master.
- <img width="1012" alt="2 5 scrin" src="https://github.com/user-attachments/assets/e40974c2-52f5-46eb-bccf-3cef1fb97909" />
+ <img width="929" alt="scrin 2 5" src="https://github.com/user-attachments/assets/9b2f2605-d764-4c16-a84c-ee9499217697" />
+
 6)В локальной копии в ветке patch1 добавьте в исходный код комментарии.
 ```
-git checkout patch1
 nano hello_world.cpp
 ```
 7)commit, push.
 ```
 git add hello_world.cpp
 git commit -m "Add comments to the code"
->>[patch1 21df999] Add comments to the code
+>>[patch1 04b01bb] Add comments to the code
  1 file changed, 1 insertion(+), 1 deletion(-)
 git push origin patch1
->>Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
+>>Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 441 bytes | 441.00 KiB/s, done.
-Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/Ekaterina416b/MyRepository.git
-   84e9612..21df999  patch1 -> patch1
+To https://github.com/Ekaterina416b/MyRepo.git
+   9a3bf03..04b01bb  patch1 -> patch1
 ```
 8)Проверьте, что новые изменения есть в созданном на шаге 5 pull-request
-<img width="925" alt="2 8 scrin" src="https://github.com/user-attachments/assets/9af0a760-ff02-419f-88be-52abc9a6bbf7" />
+<img width="935" alt="scrin  2 8" src="https://github.com/user-attachments/assets/2e0e56a2-fafe-49d1-af3c-65bf47394f62" />
 9) В удалённый репозитории выполните слияние PR patch1 -> master и удалите ветку patch1 в удаленном репозитории.
-<img width="937" alt="2 9 scrin" src="https://github.com/user-attachments/assets/ee395c45-4480-466a-ad53-552a0cae6edf" />
-После удаления ветки
-<img width="927" alt=" 2 12 scrin" src="https://github.com/user-attachments/assets/f4f8d618-9d9b-485d-a3db-5f2791daecdf" />
+<img width="958" alt="scrin 2 9" src="https://github.com/user-attachments/assets/8c9830b9-84d2-4e0d-8c34-6517d8018614" />
+
 10) Локально выполните pull.
 ```
 git checkout master
->>D	hello_world_repo/hello_world.cpp
-Switched to branch 'master'
+>>Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
 git pull origin master              
 >>remote: Enumerating objects: 1, done.
 remote: Counting objects: 100% (1/1), done.
 remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (1/1), 922 bytes | 461.00 KiB/s, done.
-From https://github.com/Ekaterina416b/MyRepository
+Unpacking objects: 100% (1/1), 918 bytes | 459.00 KiB/s, done.
+From https://github.com/Ekaterina416b/MyRepo
  * branch            master     -> FETCH_HEAD
-   5aa4647..5634f13  master     -> origin/master
-Updating 5aa4647..5634f13
+   f14591f..6ac9698  master     -> origin/master
+Updating f14591f..6ac9698
 Fast-forward
- MyRepository/hello_world.cpp | 10 ++++++++++
- 1 file changed, 10 insertions(+)
- create mode 100644 MyRepository/hello_world.cpp
+ hello_world.cpp | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
 ```
 11)С помощью команды git log просмотрите историю в локальной версии ветки master.
 ```
