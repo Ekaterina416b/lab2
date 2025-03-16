@@ -40,13 +40,14 @@ nano hello_world.cpp
 ```
 git add hello_world.cpp
 ```
-5)Закоммитьте изменения с осмысленным сообщением.
-```
+5)Закоммитьте изменения с осмысленным сообщением. 
+``` 
 git commit -m "Add hello_world.cpp with bad code style"
 >>[master acc580f] Add hello_world.cpp with bad code style
  1 file changed, 7 insertions(+)
  create mode 100644 MyRepository/hello_world.cpp
-```
+``` 
+
 6,7)Изменитьте исходный код так, чтобы программа через стандартный поток ввода запрашивалось имя пользователя. А в стандартный поток вывода печаталось сообщение Hello world from @name, где @name имя пользователя.Закоммитьте новую версию программы. Почему не надо добавлять файл повторно git add?
 ```
 git commit -am "Update hello_world.cpp to ask for user's name"
@@ -168,7 +169,9 @@ git branch -d patch1
 ```
 </p>
 </details>
-
+<details>
+ <summary>Part3</summary>
+ <p>
 1)Создайте новую локальную ветку patch2.
 ```
 git checkout -b patch2
@@ -200,19 +203,25 @@ To https://github.com/Ekaterina416b/MyRepo.git
 ```
 4,5)В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
 Убедитесь, что в pull-request появились конфликтны.
-<img width="986" alt="scrin 3 4" src="https://github.com/user-attachments/assets/18b497da-d592-4b15-be11-023db61b8f25" />
-6) Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
-```
-git fetch origin master
->>remote: Enumerating objects: 5, done.
-remote: Counting objects: 100% (5/5), done.
-remote: Compressing objects: 100% (3/3), done.
-remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-Unpacking objects: 100% (3/3), 962 bytes | 320.00 KiB/s, done.
-From https://github.com/Ekaterina416b/MyRepo
- * branch            master     -> FETCH_HEAD
-   6ac9698..1b2d7a0  master     -> origin/master
+<img width="986" alt="scrin 3 4" src="https://github.com/user-attachments/assets/18b497da-d592-4b15-be11-023db61b8f25" /> 
 
-Сделайте force push в ветку patch2
-Убедитель, что в pull-request пропали конфликтны.
-Вмержите pull-request patch2 -> master.
+
+6)Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
+```
+git pull --rebase origin master
+nano hello_world.cpp
+git add hello_world.cpp
+git rebase --continue
+```
+7)Сделайте force push в ветку patch2
+```
+git push origin patch2 --force-with-lease
+```
+8)Убедитель, что в pull-request пропали конфликтны.
+
+<img width="907" alt="Снимок экрана 2025-03-16 в 19 07 36" src="https://github.com/user-attachments/assets/510da74f-dced-4b48-b20e-785a68d529ca" />
+
+9)Вмержите pull-request patch2 -> master.
+<img width="928" alt="Снимок экрана 2025-03-16 в 18 51 13" src="https://github.com/user-attachments/assets/b687ce2f-fee5-4a2c-8bb7-871add62fad0" />
+</p>
+</details>
