@@ -168,3 +168,51 @@ git branch -d patch1
 ```
 </p>
 </details>
+
+1)Создайте новую локальную ветку patch2.
+```
+git checkout -b patch2
+>>Switched to a new branch 'patch2'
+```
+2)Измените code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
+```
+clang-format -i -style=Mozilla hello_world.cpp
+```
+3)commit, push, создайте pull-request patch2 -> master.
+```
+git add hello_world.cpp
+git commit -m "Apply Mozilla code style to hello_world.cpp using clang-format"
+>>[patch2 95f3087] Apply Mozilla code style to hello_world.cpp using clang-format
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+git push origin patch2
+>>Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'patch2' on GitHub by visiting:
+remote:      https://github.com/Ekaterina416b/MyRepo/pull/new/patch2
+remote: 
+To https://github.com/Ekaterina416b/MyRepo.git
+ * [new branch]      patch2 -> patch2
+```
+4,5)В ветке master в удаленном репозитории измените комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
+Убедитесь, что в pull-request появились конфликтны.
+<img width="986" alt="scrin 3 4" src="https://github.com/user-attachments/assets/18b497da-d592-4b15-be11-023db61b8f25" />
+6) Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
+```
+git fetch origin master
+>>remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 962 bytes | 320.00 KiB/s, done.
+From https://github.com/Ekaterina416b/MyRepo
+ * branch            master     -> FETCH_HEAD
+   6ac9698..1b2d7a0  master     -> origin/master
+
+Сделайте force push в ветку patch2
+Убедитель, что в pull-request пропали конфликтны.
+Вмержите pull-request patch2 -> master.
