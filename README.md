@@ -68,14 +68,15 @@ To https://github.com/Ekaterina416b/MyRepository.git
    3c5a746..5aa4647  master -> master
 ```
 
-9)Проверьте, что история коммитов доступна в удалёный репозитории.
-[Ссылка на коммиты](https://github.com/Ekaterina416b/MyRepo/commits/master/)
+9)Проверьте, что история коммитов доступна в удалёный репозитории.  
+[Ссылка на коммиты](https://github.com/Ekaterina416b/MyRepo/commits/master/) 
  </p>
 </details>
  <details>
  <summary>Part2</summary>
  <p>
  1)В локальной копии репозитория создайте локальную ветку patch1.
+  
  ```
  MyRepository % git checkout -b patch1
  >>Switched to a new branch 'patch1'
@@ -173,6 +174,7 @@ git branch -d patch1
  <summary>Part3</summary>
  <p>
 1)Создайте новую локальную ветку patch2.
+  
 ```
 git checkout -b patch2
 >>Switched to a new branch 'patch2'
