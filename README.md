@@ -35,6 +35,7 @@ touch hello_world.cpp
 nano hello_world.cpp
 ```
 [hello_world.cpp](hello_world.cpp)
+
 4)Добавьте этот файл в локальную копию репозитория.
 ```
 git add hello_world.cpp
