@@ -1,0 +1,40 @@
+commit 6ac969898fbe5ff62824e1912292bdb638162b51 (HEAD -> master, origin/master)
+Merge: f14591f 04b01bb
+Author: Ekaterina <karpina.katia@gmail.com>
+Date:   Sun Mar 16 13:01:39 2025 +0300
+
+    Merge pull request #1 from Ekaterina416b/patch1
+    
+    Remove using namespace std; and improve code style
+
+commit 04b01bba314268f123cfec76f20b1554cac78c76 (origin/patch1, patch1)
+Author: Ekaterina Karpina <karpina.katia@gmail.com>
+Date:   Sun Mar 16 12:55:56 2025 +0300
+
+    Add comments to the code
+
+commit 9a3bf032e7ed4adbc207771afdbf030abc55b998
+Author: Ekaterina Karpina <karpina.katia@gmail.com>
+Date:   Sun Mar 16 12:35:54 2025 +0300
+
+    Remove using namespace std; and improve code style
+
+commit f14591fb4bb04a644465f1d2244b8f13a6336d56
+Author: Ekaterina Karpina <karpina.katia@gmail.com>
+Date:   Sun Mar 16 11:10:09 2025 +0300
+
+    Update hello_world.cpp to ask for user's name
+
+commit 89ca47aea7e04f680bd0d944f17608f3e97a1382
+Author: Ekaterina Karpina <karpina.katia@gmail.com>
+Date:   Sun Mar 16 11:03:42 2025 +0300
+
+    Add hello_world.cpp with bad code style
+
+commit d220c65297ed71cb49bd89afdf6325fba8c279a1
+Author: Ekaterina Karpina <karpina.katia@gmail.com>
+Date:   Sun Mar 16 10:05:59 2025 +0300
+
+    first commit
+(END)
+
