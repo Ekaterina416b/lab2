@@ -2,9 +2,9 @@
 <details>
  <summary>Part1</summary>
  <p>
-1. Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com). 
+1)Создайте пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com). 
 
-2) Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге. 
+2)Выполните инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге. 
 ```
 Documents % mkdir MyRepo
 cd MyRepo
@@ -66,11 +66,14 @@ Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Ekaterina416b/MyRepository.git
    3c5a746..5aa4647  master -> master
 ```
+
 9)Проверьте, что история коммитов доступна в удалёный репозитории.
 [Ссылка на коммиты](https://github.com/Ekaterina416b/MyRepo/commits/master/)
  </p>
 </details>
- 
+ <details>
+ <summary>Part2</summary>
+ <p>
  1)В локальной копии репозитория создайте локальную ветку patch1.
  ```
  MyRepository % git checkout -b patch1
@@ -129,11 +132,12 @@ To https://github.com/Ekaterina416b/MyRepo.git
    9a3bf03..04b01bb  patch1 -> patch1
 ```
 8)Проверьте, что новые изменения есть в созданном на шаге 5 pull-request
-<img width="935" alt="scrin  2 8" src="https://github.com/user-attachments/assets/2e0e56a2-fafe-49d1-af3c-65bf47394f62" />
+<img width="935" alt="scrin  2 8" src="https://github.com/user-attachments/assets/2e0e56a2-fafe-49d1-af3c-65bf47394f62" /> 
+
 9) В удалённый репозитории выполните слияние PR patch1 -> master и удалите ветку patch1 в удаленном репозитории.
 <img width="958" alt="scrin 2 9" src="https://github.com/user-attachments/assets/8c9830b9-84d2-4e0d-8c34-6517d8018614" />
 
-10) Локально выполните pull.
+10)Локально выполните pull.
 ```
 git checkout master
 >>Switched to branch 'master'
@@ -155,9 +159,12 @@ Fast-forward
 ```
 git log
 ```
-[task2.11.txt](https://github.com/Ekaterina416b/lab2.1/blob/master/task2.11.txt)
+[task2.11.txt](https://github.com/Ekaterina416b/lab2.1/blob/master/task2.11.txt) 
+
 12)Удалите локальную ветку patch1.
 ```
 git branch -d patch1
->>Deleted branch patch1 (was 21df999).
+>>Deleted branch patch1 (was 04b01bb)
 ```
+</p>
+</details>
